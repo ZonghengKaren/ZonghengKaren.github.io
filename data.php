@@ -1,7 +1,9 @@
 <?php 
-header("Access-Control-Allow-Origin: http://localhost:8080, https://zonghengkaren.github.io, https://www.yangzongheng.cn");  
-header("Access-Control-Allow-Origin: *");   
-header('Access-Control-Allow-Headers: X-Requested-With,X_Requested_With');
+header('Content-type:text/html; charset=utf-8');
+header("Access-Control-Allow-Origin: http://yangzongheng.cn");  
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE");
+header('Access-Control-Allow-Headers: x-requested-with,content-type');
 $file_path = "./data.json";
 if(file_exists($file_path)){
 $fp = fopen($file_path,"r");
